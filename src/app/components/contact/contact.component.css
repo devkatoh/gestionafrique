@@ -1,0 +1,29 @@
+@import url("src/assets/css/styles.css");
+
+.card-body p{
+  font-size: large;
+}
+
+.text-container p{
+  font-size: x-large;
+}
+
+h2{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 700;
+}
+
+p{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  /*font-family: 'Futura LtCn BT', sans-serif;
+  font-family: 'Futura MdCn BT', sans-serif;
+  font-family: 'Futura Bk BT', sans-serif;
+  font-family: 'Futura XBlk BT', sans-serif;*/
+  /*font-family: 'Futura XBlkCn BT', sans-serif;*/
+}
+
+.p-20{
+  padding: 20px;
+}

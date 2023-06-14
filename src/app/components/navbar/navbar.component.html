@@ -1,0 +1,65 @@
+<nav id="header" class="navbar bg-white navbar-light navbar-primary navbar-expand-lg  fixed-top py-3"
+  data-navbar-on-scroll="data-navbar-on-scroll">
+  <div class="container"><a class="navbar-brand d-flex align-items-center fw-bold fs-2" href="#">
+      <img class="d-inline-block me-3" height="60px" width="60px" src="assets/images/logo.jpeg" alt="" />
+    </a>
+
+    <button (click)="addToggle()" class="navbar-toggler collapsed nav-toggle-btn" type="button"
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto pt-2 pt-lg-0">
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" [routerLink]="['/']" routerLinkActive="router-link-active"  data-toggle="collapse" data-target=".navbar-collapse.show" (click)="menuClick('accueil')"><a class="nav-link" [ngClass]="{'active': accueil}" aria-current="page" href="">Accueil</a></li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" (click)="menuClick('gestion')" [routerLink]="['/gestionafrique']"><a class="nav-link" [ngClass]="{'active': gestion}">Pourquoi Gestion Afrique?</a></li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" [routerLink]="['/nos-services']" (click)="menuClick('services')"><a class="nav-link" [ngClass]="{'active': services}">Nos services</a></li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" [routerLink]="['/nos-metiers']" (click)="menuClick('metiers')"><a class="nav-link" [ngClass]="{'active': metiers}">Nos métiers</a></li>
+        <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" [routerLink]="['/contact']" (click)="menuClick('contact')"><a class="nav-link" [ngClass]="{'active': contact}">Nos contacts</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- <header class="header" data-header>
+  <div class="container">
+    <a routerLink="/home" class="logo">
+      <img src="assets/images/logo.svg" width="151" height="28" alt="Jassa home">
+    </a>
+    <nav class="navbar" data-navbar [ngClass]="status ? 'active' : ''">
+      <ul class="navbar-list">
+        <li class="navbar-item">
+          <a routerLink="/home" class="label-lg navbar-link has-after" routerLinkActive="active">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/service"  class="label-lg navbar-link has-after" routerLinkActive="active">Services</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/portfolio"  class="label-lg navbar-link has-after" routerLinkActive="active">Portfolio</a>
+        </li>
+        <li class="navbar-item">
+          <a routerLink="/contact"  class="label-lg navbar-link has-after" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <a routerLink="/contact" class="btn btn-primary">Contact Now</a>
+    <button class="nav-toggle-btn" aria-label="menu" data-nav-toggler (click)="addToggle()">
+      <span
+        class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</header> -->
+<!-- <nav>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="logo">DesignX</label>
+  <ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Feedback</a></li>
+  </ul>
+</nav> -->
